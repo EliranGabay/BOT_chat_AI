@@ -27,9 +27,3 @@ def bag_of_words(tokenize_sentence, all_words):
         if w in tokenize_sentence:
             bag[idx] = 1.0
     return bag
-
-
-sentence = ["hello", "how", "are", "you"]
-words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-bog = bag_of_words(sentence, words)
-print(bog)
